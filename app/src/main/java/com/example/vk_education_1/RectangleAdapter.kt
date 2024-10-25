@@ -29,11 +29,11 @@ class RectangleAdapter() : RecyclerView.Adapter<RectangleViewHolder>() {
     fun setItems(list: List<Int>) {
         items.clear()
         items.addAll(list)
-        notifyDataSetChanged()
+        notifyItemRangeChanged(0, items.size)
     }
 
     fun addItems(item: Int) {
         items.add(item)
-        notifyDataSetChanged()
+        notifyItemInserted(items.size)
     }
 }

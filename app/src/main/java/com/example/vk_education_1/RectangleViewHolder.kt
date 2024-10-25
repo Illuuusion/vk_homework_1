@@ -13,7 +13,7 @@ class RectangleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val image = view.findViewById<ImageView>(R.id.imageView)
 
     fun bind(number: Int) {
-        text.text = "$number"
+        text.text = number.toString()
         image.setBackgroundColor(
             if (number.mod(2) == 0)
                 Color.RED

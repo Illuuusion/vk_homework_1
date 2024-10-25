@@ -27,13 +27,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (savedInstanceState != null) {
-            for (it in 0..savedInstanceState.getInt(RECTANGLES_COUNT) - 1)
+            for (it in 0..< savedInstanceState.getInt(RECTANGLES_COUNT) - 1)
                 adapter.addItems(it)
         }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putInt(RECTANGLES_COUNT, adapter.getItemCount());
+        outState.putInt(RECTANGLES_COUNT, adapter.itemCount);
     }
 }
