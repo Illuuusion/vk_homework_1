@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.vk_education_1"
+    namespace = "com.vk_education_1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.vk_education_1"
+        applicationId = "com.vk_education_1"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

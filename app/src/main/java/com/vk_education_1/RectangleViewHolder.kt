@@ -1,11 +1,10 @@
-package com.lection.vk_homework_1
+package com.vk_education_1
 
 import android.graphics.Color
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.vk_education_1.R
 
 class RectangleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -21,6 +20,5 @@ class RectangleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                 Color.BLUE
         )
     }
-
 
 }

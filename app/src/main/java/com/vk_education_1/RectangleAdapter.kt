@@ -1,10 +1,9 @@
-package com.lection.vk_homework_1
+package com.vk_education_1
 
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.vk_education_1.R
 
 class RectangleAdapter() : RecyclerView.Adapter<RectangleViewHolder>() {
 

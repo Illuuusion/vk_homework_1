@@ -1,16 +1,15 @@
-package com.lection.vk_homework_1
+package com.vk_education_1
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.vk_education_1.R
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var button: Button
-    private var RECTANGLES_COUNT = "0"
+    private var rectanglesCount = "0"
 
     private val adapter = RectangleAdapter()
 
@@ -27,13 +26,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (savedInstanceState != null) {
-            for (it in 0..< savedInstanceState.getInt(RECTANGLES_COUNT) - 1)
-                adapter.addItems(it)
+            val list = (0..< savedInstanceState.getInt(rectanglesCount)).toList()
+            adapter.setItems(list)
         }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putInt(RECTANGLES_COUNT, adapter.itemCount);
+        outState.putInt(rectanglesCount, adapter.itemCount);
     }
 }
